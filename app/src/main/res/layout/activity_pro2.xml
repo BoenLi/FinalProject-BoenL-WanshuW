@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_pro"
@@ -9,7 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context="com.example.android.finalproject_boenlwanshuw.proActivity">
+    tools:context="com.example.android.finalproject_boenlwanshuw.Pro2Activity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -68,7 +69,7 @@
 
     </TableRow>
 
-       <TableRow android:layout_width="wrap_content"
+    <TableRow android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <TextView
             android:text="Gender:"
@@ -111,14 +112,11 @@
     </TableRow>
 
     <TextView
-        android:text="We recommend the food based on your BIM"
+        android:text="We recommend the food based on your BIM
+       16 18.5 25 30
+        "
         android:textSize="20dp"
         android:layout_margin="10dp"/>
-
-<Button android:id="@+id/food"
-    android:text="What should I eat"
-    android:background="#FFF176"/>
-
 
 
 </TableLayout>

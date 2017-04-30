@@ -18,11 +18,11 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class editActivity extends AppCompatActivity {
+public class Edit2Activity extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
-    private String TAG = "editActivity";
+    private String TAG = "Edit2Activity";
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
     private DatabaseReference myRef;
     private String gender;
@@ -31,7 +31,7 @@ public class editActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit);
+        setContentView(R.layout.activity_edit2);
 
         mAuth = FirebaseAuth.getInstance();
         mAuthListener = new FirebaseAuth.AuthStateListener() {
@@ -45,7 +45,7 @@ public class editActivity extends AppCompatActivity {
                 } else {
                     // User is signed out
                     Log.d(TAG, "onAuthStateChanged:signed_out");
-                    Intent intent = new Intent(editActivity.this,MainActivity.class);
+                    Intent intent = new Intent(Edit2Activity.this,MainActivity.class);
                     startActivity(intent);
                     finish();
                 }
@@ -86,7 +86,7 @@ public class editActivity extends AppCompatActivity {
 
         myRef.child("gender").setValue(gender);
 
-        Toast.makeText(editActivity.this, "Update",
+        Toast.makeText(Edit2Activity.this, "Update",
                 Toast.LENGTH_SHORT).show();
 
     }
@@ -124,22 +124,4 @@ public class editActivity extends AppCompatActivity {
         }
     }
 }
-
-//    private FirebaseAuth mAuth;
-//    private FirebaseAuth.AuthStateListener mAuthListener;
-//    private FirebaseDatabase database = FirebaseDatabase.getInstance();
-//    private DatabaseReference myRef;
-//    String TAG = "EditActivity";
-//    String gender = "";
-//
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_edit);
-//
-//        mAuth = FirebaseAuth.getInstance();
-//        mAuthListener = new FirebaseAuth.AuthStateListener() {
-//            @Override
-//            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-//                FirebaseUser user = firebase
 

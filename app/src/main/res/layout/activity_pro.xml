@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.android.finalproject_boenlwanshuw.proActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to the TC Nutrition App!"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:text="Your Profile Info:"
+        android:layout_marginBottom="10dp"
+        android:textSize="18dp"
+        android:background="#C5E1A5"
+        android:padding="8dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
+
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="Name:"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name" />
+
+        <TextView
+            android:text="Not set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/showName" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="Age:"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/age" />
+
+        <TextView
+            android:text="Not set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/showAge" />
+
+    </TableRow>
+
+       <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Gender:"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gender" />
+
+        <TextView
+            android:text="Not set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/showGender" />
+
+    </TableRow>
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="BMI:"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textColor="#8BC34A"
+            android:textStyle="bold"
+            android:id="@+id/bmi" />
+
+        <TextView
+            android:text="Not set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="#8BC34A"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:id="@+id/showBMI" />
+
+    </TableRow>
+
+    <TextView
+        android:text="We recommend the food based on your BIM"
+        android:textSize="20dp"
+        android:layout_margin="10dp"/>
+
+<Button android:id="@+id/food"
+    android:text="What should I eat"
+    android:background="#FFF176"/>
+
+
+
+</TableLayout>

@@ -113,7 +113,7 @@
 
     <TextView
         android:text="We recommend the food based on your BIM
-       16 18.5 25 30
+       16 18.5 25 30 4
         "
         android:textSize="20dp"
         android:layout_margin="10dp"/>

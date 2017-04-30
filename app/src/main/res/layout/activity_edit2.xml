@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context="com.example.android.finalproject_boenlwanshuw.editActivity">
+    tools:context="com.example.android.finalproject_boenlwanshuw.Edit2Activity">
 
 
     <TextView
@@ -75,7 +75,24 @@
                 android:background="#C5E1A5" />
         </TableRow>
 
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="7dp">
 
+            <TextView
+                android:id="@+id/height_lable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Height: " />
+
+            <EditText
+
+                android:id="@+id/height_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#C5E1A5" />
+        </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"

@@ -88,6 +88,8 @@ public class Edit2Activity extends AppCompatActivity {
 
         Toast.makeText(Edit2Activity.this, "Update",
                 Toast.LENGTH_SHORT).show();
+            Intent bmi = new Intent(Edit2Activity.this, Pro2Activity.class);
+            startActivity(bmi);
 
     }
 

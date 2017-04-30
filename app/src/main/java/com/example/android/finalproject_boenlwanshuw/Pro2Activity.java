@@ -52,6 +52,8 @@ public class Pro2Activity extends AppCompatActivity {
             }
         };
 
+
+
     }
 
     @Override
@@ -69,6 +71,10 @@ public class Pro2Activity extends AppCompatActivity {
     }
 
     public void displayInfo(){
+        Intent i=getIntent();
+        String name=i.getStringExtra("name");
+
+
         TextView nameF = (TextView)findViewById(R.id.showName);
         TextView ageF = (TextView)findViewById(R.id.showAge);
         TextView genderF = (TextView)findViewById(R.id.showGender);
@@ -76,6 +82,8 @@ public class Pro2Activity extends AppCompatActivity {
         updateField(nameF,"name");
         updateField(ageF,"age");
         updateField(genderF,"gender");
+
+
     }
 
 

@@ -51,8 +51,5 @@
         android:id="@+id/login"
         android:onClick="login"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:onClick="map"/>
+  ww
 </LinearLayout>

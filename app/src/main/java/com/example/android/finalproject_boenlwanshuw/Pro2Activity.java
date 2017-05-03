@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -45,13 +46,12 @@ public class Pro2Activity extends AppCompatActivity {
                     // User is signed out
                     Log.d(TAG, "onAuthStateChanged:signed_out");
 
-                    Intent intent = new Intent(Pro2Activity.this,MainActivity.class);
+                    Intent intent = new Intent(Pro2Activity.this, MainActivity.class);
                     startActivity(intent);
                     finish();
                 }
             }
         };
-
 
 
     }
@@ -70,24 +70,24 @@ public class Pro2Activity extends AppCompatActivity {
         }
     }
 
-    public void displayInfo(){
-        Intent i=getIntent();
-        String name=i.getStringExtra("name");
+    public void displayInfo() {
+        Intent i = getIntent();
+        String name = i.getStringExtra("name");
 
 
-        TextView nameF = (TextView)findViewById(R.id.showName);
-        TextView ageF = (TextView)findViewById(R.id.showAge);
-        TextView genderF = (TextView)findViewById(R.id.showGender);
+        TextView nameF = (TextView) findViewById(R.id.showName);
+        TextView ageF = (TextView) findViewById(R.id.showAge);
+        TextView genderF = (TextView) findViewById(R.id.showGender);
 
-        updateField(nameF,"name");
-        updateField(ageF,"age");
-        updateField(genderF,"gender");
+        updateField(nameF, "name");
+        updateField(ageF, "age");
+        updateField(genderF, "gender");
 
 
     }
 
 
-    public void updateField(final TextView filed, String key){
+    public void updateField(final TextView filed, String key) {
         myRef.child(key).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -132,5 +132,9 @@ public class Pro2Activity extends AppCompatActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    public void bmi(View view) {
+        startActivity(new Intent(this, BmiActivity.class));
     }
 }

@@ -15,8 +15,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Edit2Activity" />
-        <activity android:name=".Pro2Activity"></activity>
+        <activity android:name=".Edit2Activity"
+            android:label="Edit"/>
+        <activity android:name=".Pro2Activity"
+            android:label="Profile"/>
+        <activity android:name=".BmiActivity"
+            android:label="BMI CALCULATOR"></activity>
     </application>
 
 </manifest>

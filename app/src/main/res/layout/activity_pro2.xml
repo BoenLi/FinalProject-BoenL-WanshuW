@@ -87,36 +87,35 @@
 
     </TableRow>
 
-    <TableRow android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <TextView
-            android:text="BMI:"
-            android:layout_marginBottom="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="30dp"
-            android:textColor="#8BC34A"
-            android:textStyle="bold"
-            android:id="@+id/bmi" />
+    <!--<TableRow android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<TextView-->
+            <!--android:text="BMI:"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="30dp"-->
+            <!--android:textColor="#8BC34A"-->
+            <!--android:textStyle="bold"-->
+            <!--android:id="@+id/bmi" />-->
 
-        <TextView
-            android:text="Not set"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:textColor="#8BC34A"
-            android:textStyle="bold"
-            android:textSize="30dp"
-            android:id="@+id/showBMI" />
+        <!--<TextView-->
+        <!--android:text="Not set"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:textColor="#8BC34A"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textSize="30dp"-->
+        <!--android:id="@+id/showBMI" />-->
 
-    </TableRow>
+    <!--</TableRow>-->
 
-    <TextView
-        android:text="We recommend the food based on your BIM
-       16 18.5 25 30
-        "
-        android:textSize="20dp"
-        android:layout_margin="10dp"/>
 
+<Button
+    android:text="See My BMI"
+    android:onClick="bmi"
+    android:background="#8BC34A"
+    />
 
 </TableLayout>

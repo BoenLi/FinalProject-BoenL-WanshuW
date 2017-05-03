@@ -108,7 +108,7 @@
         android:fadingEdge="vertical"
         android:longClickable="true"
       android:background="#FFF176"
-        android:text="Calculate"
+        android:text="Calculate NOW"
         android:visibility="visible" />
 
     <!-- Text view for showing result -->

@@ -77,6 +77,10 @@ public class BmiActivity extends AppCompatActivity {
             return "Overweight";
         }
     }
+
+    public void food(View view) {
+        startActivity(new Intent(this, FoodActivity.class));
+    }
     public void map(View view) {
         String searchFood;
         searchFood="salad";

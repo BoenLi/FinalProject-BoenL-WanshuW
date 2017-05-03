@@ -127,7 +127,7 @@
         android:layout_gravity="center"
         android:layout_height="wrap_content"
         android:background="#FFF176"
-        android:onClick="map"
+        android:onClick="food"
         android:layout_marginTop="20dp"
         android:text="See What To EAT"/>
 

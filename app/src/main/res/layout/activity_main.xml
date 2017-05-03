@@ -51,5 +51,5 @@
         android:id="@+id/login"
         android:onClick="login"/>
 
-  ww
+
 </LinearLayout>

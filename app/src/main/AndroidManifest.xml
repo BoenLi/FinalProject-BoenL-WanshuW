@@ -24,8 +24,20 @@
         <activity
             android:name=".BmiActivity"
             android:label="BMI CALCULATOR" />
-        <activity android:name=".FoodActivity" />
-        <activity android:name=".DetailActivity"></activity>
+        <activity
+            android:name=".FoodActivity"
+            android:label="FOOD LIST" />
+        <activity
+            android:name=".DetailActivity"
+            android:label="FOOD LIST DETAIL" />
+        <activity
+            android:name=".FoodActivity02"
+            android:label="FOOD LIST DETAIL" />
+        <activity
+            android:name=".FoodActivity03"
+            android:label="FOOD LIST DETAIL">
+
+        </activity>
     </application>
 
 </manifest>

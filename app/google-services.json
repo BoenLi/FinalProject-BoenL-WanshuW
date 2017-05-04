@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "132674249346",
+    "firebase_url": "https://finalproject-boenl-wanshuw.firebaseio.com",
+    "project_id": "finalproject-boenl-wanshuw",
+    "storage_bucket": "finalproject-boenl-wanshuw.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:132674249346:android:2d18b5fdc2259983",
+        "android_client_info": {
+          "package_name": "com.example.android.finalproject_boenlwanshuw"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "132674249346-89tpuab8ej81hhtrs7i64s4lc2un4qvd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.finalproject_boenlwanshuw",
+            "certificate_hash": "bfd4e0b63aff7ac5be151b5f097d605c20ecd93f"
+          }
+        },
+        {
+          "client_id": "132674249346-3soeer11a8e7iris9s48b1mfuadohbu2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0Xbv4Ss5G3Z9j4H71HRGf0ne7cq3GhxA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "132674249346-3soeer11a8e7iris9s48b1mfuadohbu2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

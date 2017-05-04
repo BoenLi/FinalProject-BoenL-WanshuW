@@ -1,10 +1,9 @@
 package com.example.android.finalproject_boenlwanshuw;
 
 import android.content.Intent;
-import android.net.Uri;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
@@ -132,20 +131,5 @@ public class MainActivity extends AppCompatActivity {
 //                });
     }
 
-    public void map(View view) {
-        String searchFood;
-        searchFood="salad";
-//        String label = "Salad";
-//        String uriBegin = "geo:12,34";
-//        String query = "12,34(" + label + ")";
-//        String encodedQuery = Uri.encode( query  );
-//        String uriString = uriBegin + "?q=" + encodedQuery;
-//        Uri uri = Uri.parse( uriString );
-//        Intent intent = new Intent(android.content.Intent.ACTION_VIEW, uri );
-//        startActivity( intent );
-        Uri gmmIntentUri = Uri.parse("geo:40.8102,-73.9606?q="+searchFood);
-        Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
-        mapIntent.setPackage("com.google.android.apps.maps");
-        startActivity(mapIntent);
-    }
+
 }

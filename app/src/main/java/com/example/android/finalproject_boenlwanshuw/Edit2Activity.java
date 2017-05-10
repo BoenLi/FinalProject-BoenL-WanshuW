@@ -1,9 +1,9 @@
 package com.example.android.finalproject_boenlwanshuw;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -110,6 +110,10 @@ public class Edit2Activity extends AppCompatActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    public void photo(View view) {
+        startActivity(new Intent(this, CameraActivity.class));
     }
 
     @Override

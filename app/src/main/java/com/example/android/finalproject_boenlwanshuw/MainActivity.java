@@ -44,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
 
         };
     }
-
     @Override
     public void onStart() {
         super.onStart();
@@ -59,39 +58,81 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void login(View view)
+    //
+//    @Override
+//    public void onStart() {
+//        super.onStart();
+//        mAuth.addAuthStateListener(mAuthListener);
+//    }
+//
+//    @Override
+//    public void onStop() {
+//        super.onStop();
+//        if (mAuthListener != null) {
+//            mAuth.removeAuthStateListener(mAuthListener);
+//        }
+//    }
+    public void login(View v) {
 
-    {
-        EditText emailField = (EditText) findViewById(R.id.email);
-        EditText passwordField = (EditText) findViewById(R.id.password);
+        EditText em = (EditText) findViewById(R.id.email);
+        String email = em.getText().toString();
 
-        mAuth.signInWithEmailAndPassword(emailField.getText().toString(), passwordField.getText().toString())
+        EditText pw = (EditText) findViewById(R.id.password);
+        String password = pw.getText().toString();
+
+        mAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        Log.d(TAG, "SignInWithEmail:onComplete:" + task.isSuccessful());
+                        Log.d(TAG, "signInWithEmail:onComplete:" + task.isSuccessful());
 
+                        Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                        startActivity(intent);
 
-
+                        // If sign in fails, display a message to the user. If sign in succeeds
+                        // the auth state listener will be notified and logic to handle the
+                        // signed in user can be handled in the listener.
                         if (!task.isSuccessful()) {
                             Log.w(TAG, "signInWithEmail:failed", task.getException());
                             Toast.makeText(MainActivity.this, "Login unsuccessful!",
                                     Toast.LENGTH_SHORT).show();
-                        } else {
-                            Toast.makeText(MainActivity.this, "Login successful!",
-                                    Toast.LENGTH_SHORT).show();
-                        }
+                        }// ...
                     }
-
-
                 });
+
+//    public void login(View view)
+//
+//    {
+//        EditText emailField = (EditText) findViewById(R.id.email);
+//        EditText passwordField = (EditText) findViewById(R.id.password);
+//
+//        mAuth.signInWithEmailAndPassword(emailField.getText().toString(), passwordField.getText().toString())
+//                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+//                    @Override
+//                    public void onComplete(@NonNull Task<AuthResult> task) {
+//                        Log.d(TAG, "SignInWithEmail:onComplete:" + task.isSuccessful());
+//
+//
+//
+//                        if (!task.isSuccessful()) {
+//                            Log.w(TAG, "signInWithEmail:failed", task.getException());
+//                            Toast.makeText(MainActivity.this, "Login unsuccessful!",
+//                                    Toast.LENGTH_SHORT).show();
+//                        } else {
+//                            Toast.makeText(MainActivity.this, "Login successful!",
+//                                    Toast.LENGTH_SHORT).show();
+//                        }
+//                    }
+//
+//
+//                });
     }
 
     public void register(View view) {
         EditText emailField = (EditText) findViewById(R.id.email);
+        final String email = emailField.getText().toString();
         EditText passwordField = (EditText) findViewById(R.id.password);
-        String email = emailField.getText().toString();
-        String password = passwordField.getText().toString();
+        final String password = passwordField.getText().toString();
 
         mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -99,14 +140,70 @@ public class MainActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         Log.d(TAG, "createUserWithEmail:onComplete:" + task.isSuccessful());
 
+                        // If sign in fails, display a message to the user. If sign in succeeds
+                        // the auth state listener will be notified and logic to handle the
+                        // signed in user can be handled in the listener.
                         if (!task.isSuccessful()) {
-                            Toast.makeText(MainActivity.this, "Authentication failed.",
+                            Toast.makeText(MainActivity.this, "Registration failed.",
+                                    Toast.LENGTH_SHORT).show();
+                        } else {
+                            Toast.makeText(MainActivity.this, "Registration successful!",
                                     Toast.LENGTH_SHORT).show();
                         }
-
                         // ...
+
                     }
                 });
+    }
+//    public void register(View v){
+//
+//        EditText em = (EditText)findViewById(R.id.email);
+//        String email = em.getText().toString();
+//
+//        EditText pw = (EditText)findViewById(R.id.password);
+//        String password = pw.getText().toString();
+//
+//        mAuth.createUserWithEmailAndPassword(email, password)
+//                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+//                    @Override
+//                    public void onComplete(@NonNull Task<AuthResult> task) {
+//                        Log.d(TAG, "createUserWithEmail:onComplete:" + task.isSuccessful());
+//
+//                        // If sign in fails, display a message to the user. If sign in succeeds
+//                        // the auth state listener will be notified and logic to handle the
+//                        // signed in user can be handled in the listener.
+//                        if (!task.isSuccessful()) {
+//                            Toast.makeText(MainActivity.this, "Registration unsuccessful!",
+//                                    Toast.LENGTH_SHORT).show();
+//                        } else {
+//                            Toast.makeText(MainActivity.this, "Registration successful!",
+//                                    Toast.LENGTH_SHORT).show();
+//                        }
+//
+//                        // ...
+//                    }
+//                });
+//    }
+//    public void register(View view) {
+//        EditText emailField = (EditText) findViewById(R.id.email);
+//        EditText passwordField = (EditText) findViewById(R.id.password);
+//        String email = emailField.getText().toString();
+//        String password = passwordField.getText().toString();
+//
+//        mAuth.createUserWithEmailAndPassword(email, password)
+//                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+//                    @Override
+//                    public void onComplete(@NonNull Task<AuthResult> task) {
+//                        Log.d(TAG, "createUserWithEmail:onComplete:" + task.isSuccessful());
+//
+//                        if (!task.isSuccessful()) {
+//                            Toast.makeText(MainActivity.this, "Authentication failed.",
+//                                    Toast.LENGTH_SHORT).show();
+//                        }
+//
+//                        // ...
+//                    }
+//                });
 
 
 //        mAuth.createUserWithEmailAndPassword(emailField.getText().toString(), passwordField.getText().toString())
@@ -132,4 +229,4 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-}
+

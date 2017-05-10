@@ -19,7 +19,7 @@ public class FoodActivity03 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_food03);
+        setContentView(R.layout.activity_food);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
 
 

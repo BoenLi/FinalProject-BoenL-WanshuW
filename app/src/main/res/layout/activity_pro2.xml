@@ -31,6 +31,37 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView2" />
+    <!--<TableRow android:layout_gravity="center">-->
+    <!--<Button-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_margin="5dp"-->
+    <!--android:onClick="takePhoto"-->
+    <!--android:text="Take Photo" />-->
+
+    <!--<Button-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:onClick="pickPhoto"-->
+    <!--android:layout_margin="5dp"-->
+    <!--android:text="Pick Photo" />-->
+    <!--<Button-->
+    <!--android:id="@+id/save"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:layout_margin="5dp"-->
+    <!--android:text="upload"-->
+    <!--android:onClick="upload"/>-->
+    <!--</TableRow>-->
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="100dp"
+        android:layout_gravity="center"
+        android:layout_height="200dp"
+        android:scaleType="fitCenter" />
+
 
     <TableRow android:layout_width="match_parent"
         android:layout_height="match_parent">

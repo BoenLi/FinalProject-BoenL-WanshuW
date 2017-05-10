@@ -36,6 +36,10 @@
         <activity
             android:name=".FoodActivity03"
             android:label="FOOD LIST DETAIL">
+        </activity>
+        <activity
+            android:name=".CameraActivity"
+            android:label="Camera">
 
         </activity>
     </application>

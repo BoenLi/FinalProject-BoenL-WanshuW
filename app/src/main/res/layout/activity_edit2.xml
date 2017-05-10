@@ -31,6 +31,12 @@
         android:textAlignment="center"
         android:textSize="20sp" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:onClick="photo"
+        android:text="Edit Photo"
+        android:background="#C5E1A5" />
 
     <TableLayout
         android:layout_width="match_parent"

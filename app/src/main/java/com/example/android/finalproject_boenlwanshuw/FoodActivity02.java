@@ -35,14 +35,26 @@ public class FoodActivity02 extends AppCompatActivity {
 
     private void initItemData() {
         itemList = new ArrayList<>();
-        itemList.add(new Info("Shrimp", "Shrimp is a type of animal found in the sea. It tends to be low in fat and calories, but high in protein. It is also loaded with various other nutrients, including selenium and vitamin B12.\n", R.drawable.shrimp));
-        itemList.add(new Info("Tuna", "Tuna is very popular in Western countries, and tends to be low in fat and calories, but high in protein. It is perfect people who need to add more protein to their diets, while keeping calories low\n", R.drawable.tuna));
-        itemList.add(new Info("Eggs", "Eggs are among the healthiest and most nutritious foods on the planet.They are loaded with all sorts of nutrients, including important brain nutrients and compounds that can improve eye health\n", R.drawable.eggs));
-        itemList.add(new Info("Chicken", "Chicken is among the world’s most popular meats. It is high in many beneficial nutrients, and an excellent source of protein.If you’re on a low-carb diet, then it may be a better choice to go for the fattier cuts, like the wings and thighs.\n", R.drawable.chicken));
-        itemList.add(new Info("Broccoli", "Broccoli is a tasty cruciferous vegetable that can be eaten both raw and cooked. It is high in vitamin C, vitamin K and fiber, and also contains potent cancer-fighting plant compounds.\n", R.drawable.broccoli));
-        itemList.add(new Info("Almonds", "Almonds are incredibly tasty and crunchy. They are loaded with fiber, vitamin E and are among the world’s best sources of magnesium, a mineral that most people don’t get enough of.\n", R.drawable.almonds));
 
+        itemList = new ArrayList<>();
+        itemList.add(new Info("Shrimp", "Shrimp is a type of animal found in the sea. ",
+                R.drawable.shrimp));
+        itemList.add(new Info("Tuna", "Tuna is very popular in Western countries, and tends to be low in fat and calories, but high in protein. ", R.drawable.tuna));
+        itemList.add(new Info("Eggs", "Eggs are among the healthiest and most nutritious foods on the planet.", R.drawable.eggs));
+        itemList.add(new Info("Chicken", "Chicken is among the world’s most popular meats. It is high in many beneficial nutrients, and an excellent source of protein.", R.drawable.chicken));
+        itemList.add(new Info("Broccoli", "Broccoli is a tasty cruciferous vegetable that can be eaten both raw and cooked. It is high in vitamin C, vitamin K and fiber, and also contains potent cancer-fighting plant compounds.", R.drawable.broccoli));
+        itemList.add(new Info("Almonds", "Almonds are incredibly tasty and crunchy. They are loaded with fiber, vitamin E and are among the world’s best sources of magnesium, a mineral that most people don’t get enough of.", R.drawable.almonds));
     }
+//    private void initItemData() {
+//        itemList = new ArrayList<>();
+//        itemList.add(new Info("Shrimp", "Shrimp is a type of animal found in the sea. It tends to be low in fat and calories, but high in protein. It is also loaded with various other nutrients, including selenium and vitamin B12.\n", R.drawable.shrimp));
+//        itemList.add(new Info("Tuna", "Tuna is very popular in Western countries, and tends to be low in fat and calories, but high in protein. It is perfect people who need to add more protein to their diets, while keeping calories low\n", R.drawable.tuna));
+//        itemList.add(new Info("Eggs", "Eggs are among the healthiest and most nutritious foods on the planet.They are loaded with all sorts of nutrients, including important brain nutrients and compounds that can improve eye health\n", R.drawable.eggs));
+//        itemList.add(new Info("Chicken", "Chicken is among the world’s most popular meats. It is high in many beneficial nutrients, and an excellent source of protein.If you’re on a low-carb diet, then it may be a better choice to go for the fattier cuts, like the wings and thighs.\n", R.drawable.chicken));
+//        itemList.add(new Info("Broccoli", "Broccoli is a tasty cruciferous vegetable that can be eaten both raw and cooked. It is high in vitamin C, vitamin K and fiber, and also contains potent cancer-fighting plant compounds.\n", R.drawable.broccoli));
+//        itemList.add(new Info("Almonds", "Almonds are incredibly tasty and crunchy. They are loaded with fiber, vitamin E and are among the world’s best sources of magnesium, a mineral that most people don’t get enough of.\n", R.drawable.almonds));
+//
+//    }
 
 
 }

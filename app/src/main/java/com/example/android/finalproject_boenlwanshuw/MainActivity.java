@@ -74,20 +74,20 @@ public class MainActivity extends AppCompatActivity {
 //    }
     public void login(View v) {
 
-        EditText em = (EditText) findViewById(R.id.email);
-        String email = em.getText().toString();
+        EditText userEmail = (EditText) findViewById(R.id.email);
+        final String email = userEmail.getText().toString();
 
-        EditText pw = (EditText) findViewById(R.id.password);
-        String password = pw.getText().toString();
+        EditText passward = (EditText) findViewById(R.id.password);
+        String password = passward.getText().toString();
 
         mAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         Log.d(TAG, "signInWithEmail:onComplete:" + task.isSuccessful());
-
-                        Intent intent = new Intent(MainActivity.this, MainActivity.class);
-                        startActivity(intent);
+                        Intent mainIntent = new Intent(MainActivity.this, MainActivity.class);
+                        mainIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        startActivity(mainIntent);
 
                         // If sign in fails, display a message to the user. If sign in succeeds
                         // the auth state listener will be notified and logic to handle the
@@ -96,10 +96,11 @@ public class MainActivity extends AppCompatActivity {
                             Log.w(TAG, "signInWithEmail:failed", task.getException());
                             Toast.makeText(MainActivity.this, "Login unsuccessful!",
                                     Toast.LENGTH_SHORT).show();
-                        }// ...
+                        }
+
+                        // ...
                     }
                 });
-
 //    public void login(View view)
 //
 //    {
